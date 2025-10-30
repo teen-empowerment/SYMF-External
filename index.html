@@ -137,6 +137,23 @@
             });
         }
 
+          function toggleFooter() {
+    const thankyou = document.getElementById("thankyou");
+    const footer = document.getElementById("footer");
+
+    if (thankyou && footer) {
+      // Check if #thankyou is currently displayed as block
+      if (window.getComputedStyle(thankyou).display === "block") {
+        footer.style.display = "none";
+      } else {
+        footer.style.display = "block";
+      }
+    }
+  }
+
+  // Run the function once on page load
+  window.addEventListener("load", toggleFooter);
+
         /* ------------------ flip behavior (per-card) ------------------ */
         // toggles flip for the clicked card only; clicking a Vote button won't flip
         document.querySelectorAll('.candidate').forEach(card => {
