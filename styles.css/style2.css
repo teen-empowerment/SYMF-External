@@ -57,6 +57,9 @@ h1 {
     transition: 0.5s;
     position: relative;
     transform-style: preserve-3d;
+    height: 25rem;
+    display: flex;
+    align-items: center;
 }
 
 .candidate-front,
